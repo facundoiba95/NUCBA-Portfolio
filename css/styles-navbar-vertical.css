@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Roboto:wght@100;300&family=Work+Sans:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+  
+    
+}
+.nav-bar-vertical{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 678px;
+    max-height: 100%;
+    width: 320px;
+    max-width: 100%;
+    
+}
+.menu-vertical{
+    background-color: black;
+    height: 100%;
+  
+}
+.menu-vertical:hover{
+    width: 100%;
+
+}
+.menu-item__vertical.container{
+    padding:20px;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .menu-link__vertical{
+    display: flex;
+    align-items: center;
+    color:white;  
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.submenu-vertical{
+    list-style:none;
+    position: absolute;
+    width: 100%;
+    left:320px;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;  
+    opacity: 0;
+    
+}
+.submenu-vertical-item{
+    background-color:black;
+    padding:15px;
+    
+}
+.menu-item__vertical.container:hover .submenu-vertical{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+    
+}
+.submenu-vertical-item:hover {  
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9895308465182948) 0%, rgba(255,253,253,1) 100%);
+}
+.submenu-vertical-item:hover .menu-link__vertical{
+    color:white;
+    font-weight: bold;
+}
+
