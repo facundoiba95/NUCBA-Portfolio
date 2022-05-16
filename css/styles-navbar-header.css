@@ -7,12 +7,12 @@
     font-family: "Plus Jakarta Sans";
     
 }
-body{
+/*body{
     background-image: url(https://wallpapercave.com/wp/wp9497547.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:320px 73.5px;
-}
+}*/
 
 .nav-bar-container {
     display:flex;

@@ -16,6 +16,7 @@
     max-height: 100%;
     width: 320px;
     max-width: 100%;
+    position:relative;
     
 }
 .menu-vertical{
