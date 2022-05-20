@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300;400;700&family=Lobster&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans:wght@200&family=Roboto:wght@100;300&family=Work+Sans:ital,wght@0,300;1,300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+}
+main{
+    margin-left: 320px;
+    margin-top:-1000px;
+    display: flex;
+    flex-direction: column;
+}
+/* EMPIEZA STYLE DEL NAV BAR HEADER*/
+.nav-bar-container {
+    position:sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+.img img{
+    width:70px;
+    margin-left:15px;
+    background-color: white;
+    border-radius: 30%;    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-right:15px;
+    list-style: none;
+    
+}
+.menu-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+        
+}
+.menu-item .container{
+    position:relative;
+}
+.menu-link{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.submenu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:73.5px;
+}
+.submenu-item{ 
+    background-color: black;
+    height: 0;
+    visibility: hidden;
+    opacity: 0; 
+}
+.submenu-item .menu-link{
+    color:white;
+    
+}
+.menu-item:hover .submenu-item{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    padding:20px;
+    transition: all 0.3s;
+    height: 100%;
+}
+.submenu-item:hover{
+background-color: white;
+}
+.submenu-item:hover .menu-link{
+   color:black;
+   font-weight: bold;
+}
+/* ACA TERMINA STYLE DE NAV BAR HEADER*/
+
+
+/*ACA EMPIEZA NAV BAR VERTICAL*/
+.nav-bar-vertical{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 1000px;
+    max-height: 100%;
+    width: 320px;
+    max-width: 100%;
+    position:relative;
+    
+}
+.menu-vertical{
+    background-color: black;
+    height: 100%;
+  
+}
+.menu-vertical:hover{
+    width: 100%;
+
+}
+.menu-item__vertical.container{
+    padding:20px;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .menu-link__vertical{
+    display: flex;
+    align-items: center;
+    color:white;  
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.submenu-vertical{
+    list-style:none;
+    position: absolute;
+    width: 100%;
+    left:320px;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;  
+    opacity: 0;
+    
+}
+.submenu-vertical-item{
+    background-color:black;
+    padding:15px;
+    
+}
+.menu-item__vertical.container:hover .submenu-vertical{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+    
+}
+.submenu-vertical-item:hover {  
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9895308465182948) 0%, rgba(255,253,253,1) 100%);
+}
+.submenu-vertical-item:hover .menu-link__vertical{
+    color:white;
+    font-weight: bold;
+}
+/*ACA TERMINA NAV BAR VERTICAL*/
+
+/*ACA EMPIEZA SECTION PRODUCTO*/
+.productos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.producto{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+    gap:9px;
+    box-shadow:0px 5px 10px rgb(70, 70, 70);
+}
+i.fa-brands.fa-apple{
+    font-size: 20vh;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+.btnInformacion{
+    padding:15px;
+    border-radius:50px;
+    border:none;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnInformacion:hover{
+    transition: all 0.2s;
+    box-shadow: inset 0 0 15px rgb(255, 255, 255); 
+}
+.producto:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+/* ACA TERMINA SECTION PRODUCTO*/
+
+/* ACA EMPIEZA BAR GENERO */
+.bar-genero{
+    margin-bottom: 12px;  
+}
+.genero{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-weight: bold;
+    margin-left:10.5%;
+    margin-top:-11%;
+    color:white;
+}
+/* ACA TERMINA BAR GENERO*/
+
+/* ACA EMPIEZA REDES SOCIALES */
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+    padding:20px;
+}
+.redes-sociales p{
+    color: white;
+    font-weight:400;
+    font-size: 2vh;
+    letter-spacing: 5px;
+}
+.bar-redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:20px;
+    margin-top:8px;
+    
+}
+.fa-brands.fa-instagram, .fa-brands.fa-facebook,.fa-brands.fa-youtube,.fa-brands.fa-twitter,.fa-brands.fa-whatsapp{
+    font-size: 6vh;
+}
+.fa-brands.fa-instagram:hover, .fa-brands.fa-facebook:hover,.fa-brands.fa-youtube:hover,.fa-brands.fa-twitter:hover,.fa-brands.fa-whatsapp:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+    color:white;
+}
+/* ACA TERMINA REDES SOCIALES*/
+
+
+
+
+
+
+
+
+
+
